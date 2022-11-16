@@ -1,0 +1,353 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Roboto', sans-serif;
+}
+
+section{
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+h1{
+    font-size: 5rem;
+    color: white;
+}
+
+p{
+    font-size: 1.5rem;
+    color: white;
+    margin-top: 25px;
+    text-align: center;
+    width: 70%;
+}
+
+ul{
+    display: flex;
+    list-style: none;
+    margin-top: 50px;
+}
+
+.enlaces li{
+    width: 250px;
+    height: 150px;
+    border-radius: 30px;
+    margin-right: 25px;
+    display: flex;
+    cursor: pointer;
+}
+
+.enlaces li a{
+    width: 100%;
+    height: 100%;
+    text-decoration: none;
+    position: relative;
+}
+
+.enlaces li a video{
+    width: 100%;
+    height: 100%;
+    object-fit: fill;
+    border-radius: 30px;
+    position: absolute;
+    top: 0;
+    user-select: none;
+}
+
+.enlaces li a h2{
+    text-decoration: none;
+    color: white;
+    font-size: 1.5rem;
+    position: relative;
+    z-index: 5;
+    margin: 15px;
+    width: max-content;
+    padding: 5px 15px;
+    background: linear-gradient(135deg, rgba(255, 255, 255, 0.1), rgba(255, 255, 255, 0));
+    backdrop-filter: blur(10px);
+    border-radius: 10px;
+}
+
+#video-bg{
+    width: 100%;
+    height: 100vh;
+    position: absolute;
+    top: 0;
+    object-fit: cover;
+    z-index: -5;
+}
+
+ /* Ingredientes */
+
+.ingredientes li{
+    width: 250px;
+    height: 180px;
+    background-color: royalblue;
+    border-radius: 25px;
+    margin-right: 15px;
+    background: linear-gradient(135deg, rgba(255, 255, 255, 0.1), rgba(255, 255, 255, 0));
+    backdrop-filter: blur(10px);  
+    padding: 25px;  
+}
+
+.ingredientes li a{
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.ingredientes li a span{
+    color: white;
+    font-size: 1.5rem;
+    margin-bottom: 15px;
+}
+
+.ingredientes li a img{
+    width: 70%;
+}
+
+/* Ingrediente */
+
+.regresar{
+    width: max-content;
+    height: min-content;
+    border-radius: 25px;
+    position: absolute;
+    top: 50px;
+    left: 50px;
+    display: flex;
+    align-items: center;
+    background: linear-gradient(135deg, rgba(255, 255, 255, 0.1), rgba(255, 255, 255, 0));
+    backdrop-filter: blur(10px);
+}
+
+.regresar a{
+    text-decoration: none;
+    font-size: 0.8rem;
+    color: white;
+    display: flex;
+    align-items: center;
+    padding: 15px 25px 15px 25px;
+}
+
+.exit-icon{
+    width: 35px;
+    height: 35px;
+    margin-right: 15px;
+}
+
+button{
+    outline: none;
+    border: none;
+}
+
+/* Pasos */
+
+.pasos{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: fit-content;
+    margin-top: 15px;
+    position: relative;
+}
+
+.pasos-contenedor{
+    display: flex;
+    width: 60%;
+    height: 100%;
+    align-items: center;
+    position: relative;
+    overflow: hidden;
+}
+
+ol{
+    width: 100%;
+    height: 100%;
+    border-radius: 20px;
+    list-style: none;
+    display: grid;
+    grid-template-columns: repeat(4, 100%);
+}
+
+.paso-li{
+    width: 100%;
+    height: 100%;
+    padding: 25px;
+    box-sizing: border-box;
+    color: white;
+    display: flex;
+    align-items: center;;
+    justify-content: space-between;
+    background: linear-gradient(135deg, rgba(255, 255, 255, 0.1), rgba(255, 255, 255, 0));
+    backdrop-filter: blur(10px);
+    border-radius: 25px;
+    transition-duration: 1s;
+}
+
+
+.paso{
+    display: flex;
+    height: 100%;
+    flex-direction: column;
+}
+
+.paso span{
+    font-size: 2.5rem;
+    text-align: left;
+}
+
+.paso p{
+    text-align: left;
+    font-weight: 300;
+}
+
+.paso-encabezado{
+    display: flex;
+    align-items: center;
+}
+
+.paso-encabezado span{
+    background-color: rgba(0, 255, 255, 0.136);
+    border-radius: 15px;
+    padding: 5px 15px;
+    margin-right: 15px;
+}
+
+.paso-encabezado h3{
+    font-size: 2.25rem;
+}
+
+#paso-video{
+    width: 50%;
+    border-radius: 25px;
+}
+
+.slider-control{
+    width: 55px;
+    height: 55px;
+    color: white;
+    cursor: pointer;
+    position: relative;
+}
+
+.prev-slide{
+    position: absolute;
+    left: 15%;
+}
+
+.next-slide{
+    position: absolute;
+    right: 15%;
+}
+
+/* Contacto */
+
+form{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    margin-top: 15px;
+    max-height: 40%;
+}
+
+form input{
+    padding: 10px;
+    border-radius: 10px;
+    width: 100%;
+    border: none;
+    outline: none;
+    margin: 5px 0;
+    background: linear-gradient(135deg, rgba(255, 255, 255, 0.1), rgba(255, 255, 255, 0));
+    backdrop-filter: blur(10px);
+    color: white;
+    font-size: 1rem;
+}
+
+form input::placeholder{
+    color: white;
+    opacity: 0.65;
+}
+
+textarea{
+    width: 100%;
+    height: auto;
+    resize: none;
+    padding: 10px;
+    color: white;
+    background: linear-gradient(135deg, rgba(255, 255, 255, 0.1), rgba(255, 255, 255, 0));
+    backdrop-filter: blur(10px);
+    outline: none;
+    border: none;
+    border-radius: 10px;
+    font-size: 1rem;
+}
+
+textarea::placeholder{
+    color: white;
+    opacity: 0.65;
+}
+
+.propositos{
+    display: flex;
+    align-items: center;
+}
+
+.opcion{
+    margin: 10px;
+    display: flex;
+}
+
+.opcion input{
+    margin-right: 10px;
+}
+
+.propositos label{
+    font-size: 1.25rem;
+    color: white;
+}
+
+.condiciones{
+    display: flex;
+    align-items: center;
+    margin-top: 15px;
+}
+
+.condiciones input{
+    width: 15px;
+    height: 15px;
+    margin-right: 10px;
+}
+
+.condiciones label{
+    font-size: 1.25rem;
+    color: white;
+}
+
+form button{
+    width: 30%;
+    height: 80px;
+    outline: none;
+    border: none;
+    border-radius: 20px;
+    color: white;
+    margin-top: 15px;
+    background: linear-gradient(135deg, rgba(255, 255, 255, 0.1), rgba(255, 255, 255, 0));
+    backdrop-filter: blur(10px);
+    cursor: pointer;
+    border: 2.5px solid white;
+}
+
+input:focus-within{
+    border: 2.5px solid white; 
+    box-sizing: content-box;
+}
