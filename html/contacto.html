@@ -1,3 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/style.css">
+    <title>Contacto | Espaguetis con Albóndigas</title>
+</head>
+<body>
+    <section>
+        <h1>Contacto</h1>
+        <p>¿Qué puedo hacer por ti?</p>
+        <form action="">
+            <input type="text" name="name" id="name" placeholder="Nombre" autocomplete="off">           
+            <input type="email" required="true" name="email" id="email" placeholder="Email" autocomplete="off">
+            <div class="propositos">
+                <div class="opcion">
+                    <input type="radio" name="proposito" id="proposito-consulta">
+                    <label for="proposito-consulta">Consulta</label>
+                </div>
+                <div class="opcion">
+                    <input type="radio" name="proposito" id="proposito-sugerencia">
+                    <label for="proposito-sugerencia">Sugerencia</label>
+                </div>
+                <div class="opcion">
+                    <input type="radio" name="proposito" id="proposito-correccion">
+                    <label for="proposito-correccion">Corrección</label>
+                </div>
+            </div>
+            <textarea name="message" id="message" placeholder="Comentario" cols="30" rows="5"></textarea>
+            <div class="condiciones">
+                <input type="checkbox" name="condiciones" id="condiciones">
+                <label for="condiciones">Acepto la políticas de privacidad</label>
+            </div>
+            <button type="submit">Enviar</button>
+        </form>
+        <ul class="enlaces">
+            <li>
+                <a href="./index.html">
+                    <h2>Platillo</h2>
+                    <video autoplay muted loop src="../img/platillo.mp4"></video>
+                </a>
+            </li>
+            <li>
+                <a href="./ingredientes.html">
+                    <h2>Ingredientes</h2>
+                    <video autoplay muted loop src="../img/ingredientes.mp4"></video>
+                </a>
+            </li>
+            <li>
+                <a href="./pasos.html">
+                    <h2>Pasos</h2>
+                    <video autoplay muted loop src="../img/pasos.mp4"></video>
+                </a>
+            </li>
+            <li>
+                <a href="./contacto.html">
+                    <h2>Contacto</h2>
+                    <video autoplay muted loop src="../img/contacto.mp4"></video>
+                </a>
+            </li>
+        </ul>
+    </section>
+    <video id="video-bg" autoplay muted loop src="../img/contacto.mp4"></video>
+</body>
+</html>
+
 <!-- Página con un formulario de contacto -->
 <!-- h1 -->
 <!-- p -->

@@ -1,5 +1,97 @@
-<!-- Página con la lista numerada de los pasos a seguir -->
-<!-- h1 -->
-<!-- p -->
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/style.css">
+    <title>Pasos | Espaguetis con Albóndigas</title>
+</head>
+<body>
+    <section>
+        <h1>Pasos</h1>
+        <div class="pasos">
+            <div class="prev-slide">
+                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="slider-control" id="prev-slide" viewBox="0 0 16 16">
+                    <path fill-rule="evenodd" d="M11.354 1.646a.5.5 0 0 1 0 .708L5.707 8l5.647 5.646a.5.5 0 0 1-.708.708l-6-6a.5.5 0 0 1 0-.708l6-6a.5.5 0 0 1 .708 0z" />
+                </svg>
+            </div>
+            <div class="pasos-contenedor">
+                <ol>
+                    <li class="paso-li">
+                        <div class="paso">
+                            <div class="paso-encabezado">
+                                <span>1</span>
+                                <h3>Preparar los espaguetis</h3>
+                            </div>
+                            <p>Poner los espaguetis en una olla con agua con un poco de sal. Hervir hasta que los espaguetis se ablanden.
+                            </p>
+                        </div>
+                        <video autoplay muted loop id="paso-video" src="../img/paso1.mp4"></video>
+                    </li>
+                    <li class="paso-li">
+                        <div class="paso">
+                            <div class="paso-encabezado">
+                                <span>2</span>
+                                <h3>Hacer las albóndigas</h3>
+                            </div>
+                            <p>Añadir sal a la carne molida y formar varias bolas con el mismo tamaño. Llevar a freir posteriormente.
+                            </p>
+                        </div>
+                        <video autoplay muted loop id="paso-video" src="../img/paso2.mp4"></video>
+                    </li>
+                    <li class="paso-li">
+                        <div class="paso">
+                            <div class="paso-encabezado">
+                                <span>3</span>
+                                <h3>Mezclar</h3>
+                            </div>
+                            <p>Agregar el tomate frito en una cacerola junto con los espaguetis y las albóndigas. Mezclar correctamente ¡y a servirse!
+                            </p>
+                        </div>
+                        <video autoplay muted loop id="paso-video" src="../img/paso3.mp4"></video>
+                    </li>
+                </ol>
+            </div>
+            <div class="next-slide">
+                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="slider-control" id="next-slide" viewBox="0 0 16 16">
+                    <path fill-rule="evenodd" d="M4.646 1.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1 0 .708l-6 6a.5.5 0 0 1-.708-.708L10.293 8 4.646 2.354a.5.5 0 0 1 0-.708z"/>
+                </svg>
+            </div>
+        </div>
+        <ul class="enlaces">
+            <li>
+                <a href="./index.html">
+                    <h2>Platillo</h2>
+                    <video autoplay muted loop src="../img/platillo.mp4"></video>
+                </a>
+            </li>
+            <li>
+                <a href="./ingredientes.html">
+                    <h2>Ingredientes</h2>
+                    <video autoplay muted loop src="../img/ingredientes.mp4"></video>
+                </a>
+            </li>
+            <li>
+                <a href="./pasos.html">
+                    <h2>Pasos</h2>
+                    <video autoplay muted loop src="../img/pasos.mp4"></video>
+                </a>
+            </li>
+            <li>
+                <a href="./contacto.html">
+                    <h2>Contacto</h2>
+                    <video autoplay muted loop src="../img/contacto.mp4"></video>
+                </a>
+            </li>
+        </ul>
+    </section>
+    <video id="video-bg" autoplay muted loop src="../img/paso1.mp4"></video>
+</body>
+<script src="./js/script.js"></script>
+</html>
+<!-- Página principal: -->
+<!-- Título principal (h1) -->
+<!-- Imagen con la receta -->
 <!-- Enlaces a index, ingredientes, pasos y contacto -->
-<!-- lista numerada -->
